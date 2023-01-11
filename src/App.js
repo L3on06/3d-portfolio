@@ -1,11 +1,13 @@
+import React from 'react';
 import './App.css';
+import Spline from '@splinetool/react-spline';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <h1>3d Portfolio</h1>
+    <div className='main'>
+      <Spline scene="https://prod.spline.design/dJEYQluapHYSl852/scene.splinecode" />
     </div>
   );
 }
 
-export default App;
+
