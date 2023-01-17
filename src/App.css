@@ -9,19 +9,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-y: hidden;
+    text-align: center;
 }
 
 .spline {
-    transform: scale(0.4) translateY(-30%);
+    transform: scale(0.9);
 }
 
 .fade-in {
     opacity: 1;
- animation-name: fadeInOpacity;
- animation-iteration-count: 1;
- animation-timing-function: ease-in;
- animation-duration: 2s;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
 }
 
 @keyframes fadeInOpacity {
@@ -32,4 +32,24 @@
     100% {
         opacity: 1;
     }
+}
+
+@media (max-width: 1200px) {
+    .spline {
+        transform: scale(0.7);
+    }
+}
+
+
+@media (max-width: 850px) {
+    .spline {
+        transform: scale(0.5);
+    }
+}
+
+@media (max-width: 568px) {
+    .spline {
+        transform: scale(0.3);
+    }
+
 }
